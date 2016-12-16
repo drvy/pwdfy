@@ -1,1 +1,169 @@
-Test
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>PWDFY &dash; No such thing as randomness &mdash; Unique Password Generator and Manager</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/bootswatch/3.3.7/paper/bootstrap.min.css' integrity='sha256-LxKiHTQko0DUCUSgrIK23SYMymvfuj8uxXmblBvVWm0=' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/css/pwdfy.css'>
+</head>
+<body>
+    <div class='container'>
+        <header id='mainHeader'>
+            <nav class='navbar navbar-default'>
+                <div class='container-fluid'>
+
+                    <div class='navbar-header'>
+                        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#mainMenu' aria-expanded='false'>
+                            <span class='sr-only'>Toggle navigation</span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </button>
+
+                        <a class='brand' href='index.html'>
+                            <h1 class='navbar-brand'>PWDFY</h1>
+                        </a>
+                    </div>
+
+                    <div class='collapse navbar-collapse' id='mainMenu'>
+                        <ul class='nav navbar-nav navbar-right'>
+
+                            <li class='active'>
+                                <a href='#'>Home</a>
+                                <span class='sr-only'>(current)</span>
+                            </li>
+                            <li><a href='#generator'>Generator</a></li>
+                            <li><a href='#about'>Information</a></li>
+                            <li><a href='#contact'>Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+
+        <section class='content panel panel-success'>
+        
+            <article id='home'>
+                <header class='panel-heading'>
+                    <h2>There is no such thing as randomness.</h2>
+                </header>
+
+                <div class='article-content panel-body'>
+                    <p><strong><em>PWDFY</em></strong> is a <strong>unique password generator and manager</strong> that 
+                    doesn't work like the traditional ones. The passwords generated with this tool <strong>are not 
+                    random</strong>, instead, we use your input data to generate a <strong>unique one-way hash</strong> 
+                    that transforms into a secure password.</p>
+
+                    <p>We use secure, tested and proven methods of hashing input data. <strong>We don't store anything</strong> 
+                    and there is <strong>no need to remember your password</strong>. A unique method that <strong>removes</strong> 
+                    two of the most common factors for reusing a password: <strong>forgeting and/or losing</strong> it.</p>
+
+                    <figure>
+                        <img class='img-responsive' src='http://placehold.it/700x250/f5f5f5/666666' alt='How it works'>
+                        <figcaption>How we generate a password.</figcaption>
+                    </figure>
+
+                    <p>Want to know more about how we do our magic? Check the Information tab or if you're ready to 
+                    start being unique, click the button below to generate your awesome password.</p>
+                </div>
+
+                <aside class='panel-footer'>
+                    <a href='#' title='' class='btn btn-pwdfy btn-info btn-block'>Generate a password!</a>
+                </aside>
+            </article>
+
+
+            <article id='generator'>
+                <header class='panel-heading'>
+                    <h2>
+                        Generate a password
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </h2>
+                </header>
+
+                <div class='article-content panel-body'>
+                    <div class='form'>
+                        <div class='form-group'>
+                            <label for='pwdfyUser' class='control-label'>My user will be</label>
+                            <input type="email" class="form-control" id="pwdfyUser" placeholder="Sarah">
+                        </div>
+
+                        <div class='form-group'>
+                            <label for='pwdfySite' class='control-label'>I will be on</label>
+                            <input type="url" class="form-control" id="pwdfySite" placeholder="facebook.com">
+                        </div>
+
+                        <div class='form-group'>
+                            <label for='pwdfyPswd' class='control-label'>My master password is</label>
+                            <input type="password" class="form-control" id="pwdfyPswd" placeholder="One to rule them all">
+                        </div>
+                    </div>
+                </div>
+
+                <aside class='panel-footer'>
+                    <div class='btn-group btn-group-justified dropup' role='group' aria-label='...'>
+
+                        <button type='button' id='pwdfyGenerate' class='btn btn-pwdfy btn-info'>
+                            Generate a password!
+                        </button>
+
+                        <button type="button" id='toggleOptions' class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup='true' aria-expanded='false'>
+                            <i class='fa fa-ellipsis-v'></i>
+                        </button>
+
+                        <ul class='dropdown-menu dropdown-menu-right'>
+                            <li>
+                                <div class='checkbox'>
+                                    <label>
+                                        <input type='checkbox'> Next time take me directly to the generator.
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class='fa fa-question-circle-o'></i>
+                                <a href='#'>Why asking this kind of data?</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+            </article>
+
+            <article id='contact'>
+                <header class='panel-heading'>
+                    <h2>Contact</h2>
+                </header>
+
+                <div class='panel-body'>
+                    <p>If you have any doubts, questions or suggestions don't hesitate to contact us at the email 
+                    provided below. If you want to improve this project and you know how to code in <em>JS, HTML and/or 
+                    CSS</em> you can contribute to the public <a href='https://github.com/drvy/pwdfy' title='drvy/pwdfy &mdash; The PWDFY Project at GitHub"' target='_blank'>respository at GitHub</a>. 
+                    If you know any other language besides <em>Spanish, Bulgarian and English</em> and want to see this 
+                    service in that language, please drop us an email stating your wish to translate.</p>
+
+                    <div class='email well'><a href='mailto:pwdfy@drvy.net' title='Drop us a mail!'>pwdfy@drvy.net</a></div>
+
+                    <aside class='panel-footer'>
+                        <p class='note'>Please notice that this email is handled by Google Services so their anti-spam 
+                        politics apply. Typical response time is between 12 and 48 hours.</p>
+                    </aside>
+
+                </div>
+            </article>
+
+        </section>
+        
+
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=' crossorigin='anonymous'></script>
+    <script src='assets/js/pwdfy.js'></script>
+</body>
+</html>
