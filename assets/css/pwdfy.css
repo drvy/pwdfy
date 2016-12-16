@@ -156,7 +156,27 @@ figure {
     }
 
 
-#contact, #home { display: none !important; }
+#result .form-group {
+    margin-bottom: 15px;
+}
+
+    #result .form-group .control-label {
+        padding: 7px !important;
+        font-size: 0.8em !important;
+        text-align: left;
+        display: block;
+    }
+
+    #result .form-group button {
+        background: #f1f1f1;
+        color: #666;
+        border-radius: 0px;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+
+#contact, #home, #generator { display: none !important; }
 
 #contact .email {
     background: transparent !important;
@@ -174,3 +194,16 @@ figure {
     color: #999;
     text-align: center;
 }
+
+
+
+.bits {
+    background: rgba(0,0,0,0.3);
+    padding: 2px;
+}
+
+.bg-pwdfy { background: #4d4860; color: #f5f5f5; }
+.bg-high { background: #00b45a ; color: #f5f5f5; }
+.bg-mid { background: #e77400; color: #f5f5f5; }
+.bg-low  { background: #cd0000; color: #f5f5f5; }
+
