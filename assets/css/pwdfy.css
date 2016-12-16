@@ -1,0 +1,176 @@
+a, a:hover, a:active {
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background: #e5e5e5 url(../img/static-bg.png) repeat fixed;
+}
+
+body > div.container {
+    max-width: 700px;
+    margin: 5% auto 0 auto;
+}
+
+
+header > .navbar {
+    border-radius: 3px;
+    background: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    border-width: 1px 1px 2px;
+    box-shadow: none;
+    font-size: 1.1em;
+}
+
+    header h1.navbar-brand {
+        font-size: 2em;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    header .navbar-brand:hover, header .navbar-brand:active {
+        color: #666 !important;
+        text-decoration: underline;
+    }
+
+    header .navbar-nav a, header .navbar-nav a:visited {
+        border-bottom: 2px solid #ccc;
+        font-weight: 300;
+    }
+
+        header .navbar-nav a:hover {
+            border-color: purple;
+        }
+
+        header .navbar-nav a:active {
+            border-color: black;
+            background: rgba(220, 220, 220, 0.5) !important;
+        }
+
+figure {
+    margin: 10px auto;
+}
+
+    figure figcaption {
+        text-align: center;
+        color: #aaa;
+        font-size: 0.8em;
+    }
+
+
+.panel { background: #f5f5f5; }
+
+.panel-heading h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 5px auto 0px auto;
+    padding-bottom: 10px;
+    font-weight: 300;
+    color: #4d4860;
+    border-bottom: 1px solid rgba(230,230,230, 0.9);
+}
+
+.panel-body p {
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    color: #666;
+}
+
+    .panel-body p a, .panel-body p a:visited {
+        color: #4d4860 !important;
+        border-bottom: 1px dashed #aaa;
+        text-decoration: none !important;
+    }
+
+    .panel-body p a:hover {
+        color: #4d4860 !important;
+        border-bottom: 1px solid #564a77;
+        text-decoration: none;
+    }
+
+    .panel-body p a:active {
+        color: #111;
+        background: rgba(150,150,150,0.2);
+        border-color: currentColor;
+    }
+
+.btn-pwdfy {
+    background: #564a77;
+    font-weight: 600;
+}
+
+/* --------------------------------
+    Bootstrap hambuger menu animate
+ -------------------------------- */
+.navbar-toggle .icon-bar {
+      position: relative;
+      transition: all 250ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+      top: 6px;
+      transform: rotate(50deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+      top: -6px;
+      transform: rotate(-50deg);
+}
+
+#generator .panel-heading h2 {
+    font-size: 1.2em;
+}
+
+#generator .form-group label {
+    color: #4d4860;
+    font-size: 0.8em;
+}
+
+#generator .form-group input {
+    font-size: 1.3em;
+    padding: 5px 3px;
+}
+
+#generator #pwdfyGenerate { width: 80%; }
+#generator #toggleOptions { width: 20%; }
+
+
+#generator .dropdown-menu { padding: 5px; }
+#generator .dropdown-menu li { font-size: 1em;}
+
+    #generator .dropdown-menu .fa {
+        font-size: 1.8em;
+        display: inline-block;
+        margin: 0;
+    }
+
+    #generator .dropdown-menu a {
+        display: inline-block;
+        padding : 5px;
+    }
+
+
+#contact, #home { display: none !important; }
+
+#contact .email {
+    background: transparent !important;
+    text-align: center;
+}
+
+    #contact .email a, #contact .email a:visited {
+        color: #4d4860;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+#contact .note {
+    font-size: 0.8em;
+    color: #999;
+    text-align: center;
+}
